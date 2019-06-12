@@ -1,0 +1,71 @@
+@charset "utf-8";
+// 
+$wrapper:1200px;
+// 变量
+#activity_navigation {
+    position: fixed;
+    width: 100%;
+    height: 83px;
+    background: #fff;
+    box-shadow: 0 0 5px 0 #646464;
+    z-index: 20;
+    display: none;
+    .activity_top {
+        width: $wrapper;
+        height: 40px;
+        margin: 0 auto;
+        .search {
+            width: 207px;
+            height: 29px;
+            float: right;
+            margin-top: 5px;
+            position: relative;
+            .search_input {
+                width: 113px;
+                height: 27px;
+                padding-left: 10px;
+                border: 1px solid #e60044;
+                position: absolute;
+            }
+            .smt_input {
+                width: 82px;
+                height: 29px;
+                padding: 1px 6px;
+                background: url(../img/index-common.png) -189px 0 no-repeat;
+                border: 0;
+                position: absolute;
+                left: 124px;
+                text-indent: -9999px;
+            }
+        }
+    }
+    .border {
+        width: 100%;
+        border-top: 2px #ff404c solid;
+        height: 40px;
+        border-bottom: 1px solid #fff;
+    }
+    .activity_bottom {
+        width: $wrapper;
+        height: 40px;
+        margin: 0 auto;
+    }
+    ul {
+        float: left;
+        li {
+            float: left;
+            margin-right: 20px;
+            a {
+                font-size: 14px;
+                color: #666;
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                span {
+                    color: #e60044;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

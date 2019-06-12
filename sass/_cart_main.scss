@@ -1,0 +1,254 @@
+@charset "utf-8";
+// 
+$wrapper:1200px;
+// 变量
+
+/* 购物车主要部分 */
+
+#cart_main {
+    // height: 500px;
+    margin-bottom: 30px;
+    .cart_title {
+        width: $wrapper;
+        margin: 0 auto;
+        height: 20px;
+        padding: 12px 0;
+        line-height: 20px;
+        li {
+            float: left;
+            width: 150px;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+            input {
+                width: 13px;
+                height: 13px;
+                // background: url(../img/icon13-3.4f1bd610.png) 0 -14px no-repeat;
+                // border: 0;
+                // border-radius: 0;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+        }
+        li:nth-child(2) {
+            width: 450px;
+            text-indent: -200px;
+        }
+    }
+    table {
+        border: 2px solid #f2f2f2;
+        width: $wrapper;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        tr {
+            height: 111px;
+            border: 1px solid #f2f2f2;
+            height: 120px;
+            td {
+                width: 150px;
+                position: relative;
+                height: 120px;
+                input {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+                img {
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    margin-right: 10px;
+                    float: left;
+                }
+                p {
+                    width: 150px;
+                    height: 80px;
+                    float: left;
+                    margin-right: 30px;
+                    a {
+                        color: #666;
+                    }
+                    a:hover {
+                        color: #e11e19;
+                        text-decoration: underline;
+                    }
+                    span {
+                        display: block;
+                        em {
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 5px;
+                        }
+                        em:nth-child(1) {
+                            background: url(../img/deal_y.png) no-repeat -10px -270px;
+                        }
+                        em:nth-child(2) {
+                            background: url(../img/p_Spirit6.c9e43b80.png) no-repeat 0 -592px;
+                        }
+                    }
+                }
+                .type {
+                    width: 145px;
+                    height: 80px;
+                    padding: 0 20px 0 5px;
+                    border: 1px dashed #fff;
+                    color: #999;
+                    float: left;
+                    position: relative;
+                    span {
+                        display: block;
+                        margin-bottom: 5px;
+                        i {
+                            font-style: normal;
+                        }
+                    }
+                    em {
+                        display: block;
+                        position: absolute;
+                        width: 30px;
+                        height: 20px;
+                        background: #f60;
+                        color: #fff;
+                        font-style: normal;
+                        text-align: center;
+                        line-height: 20px;
+                        right: -1px;
+                        top: -1px;
+                        display: none;
+                    }
+                }
+                .type:hover {
+                    border-color: #f60;
+                }
+                .type:hover em {
+                    display: block;
+                }
+            }
+            td:nth-child(2) {
+                width: 450px;
+            }
+            .price {
+                text-align: center;
+                i {
+                    display: block;
+                    font-style: normal;
+                }
+            }
+            .number {
+                p {
+                    width: 102px;
+                    height: 28px;
+                    border: 1px solid #ccc;
+                    margin-left: 30px;
+                    position: relative;
+                    input {
+                        width: 38px;
+                        height: 18px;
+                        padding: 5px;
+                        border: 0;
+                        border-left: 1px solid #ccc;
+                        border-right: 1px solid #ccc;
+                        text-align: center;
+                        line-height: 18px;
+                        position: absolute;
+                        left: 26px;
+                        margin: 0;
+                    }
+                    em {
+                        display: inline-block;
+                        width: 26px;
+                        height: 28px;
+                        margin: 0;
+                    }
+                    .num_left {
+                        background: url(../img/p_Spirit6.b652a725.png) no-repeat -1px -179px;
+                    }
+                    .num_right {
+                        position: absolute;
+                        right: 0;
+                        background: url(../img/p_Spirit6.b652a725.png) no-repeat -1px -240px;
+                    }
+                }
+            }
+            .money {
+                color: #ff0600;
+                font-size: 14px;
+                text-align: center;
+                font-weight: bold;
+            }
+            td:nth-last-child(1) {
+                a {
+                    display: block;
+                    text-indent: 60px;
+                    margin-bottom: 10px;
+                    color: #666;
+                }
+            }
+        }
+        tr:hover .type {
+            border-color: #dbebfe;
+        }
+    }
+    .close_an_account {
+        width: $wrapper;
+        margin: 0 auto;
+        height: 44px;
+        line-height: 44px;
+        border: 1px solid #f3f3f3;
+        color: #333;
+        li {
+            float: left;
+            width: 150px;
+            text-align: center;
+            input {
+                width: 13px;
+                height: 13px;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+            a {
+                color: #333;
+            }
+        }
+        p {
+            float: right;
+            color: #666;
+            height: 44px;
+            position: relative;
+            span {
+                margin-right: 10px;
+                i {
+                    color: #ec1611;
+                    font-size: 16px;
+                    font-style: normal;
+                    margin: 0 2px;
+                }
+            }
+            strong {
+                color: #ec1611;
+                font-size: 20px;
+                em {
+                    font-style: normal;
+                }
+                margin-right: 180px;
+            }
+            a {
+                display: inline-block;
+                width: 150px;
+                height: 44px;
+                background: #ddd;
+                color: #999;
+                position: absolute;
+                right: 0;
+                top: 0;
+                font-size: 18px;
+                line-height: 44px;
+                text-align: center;
+            }
+        }
+    }
+}

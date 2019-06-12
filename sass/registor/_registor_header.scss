@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/* registor注册页面 */
+
+$width:980px;
+// 变量
+body {
+    background: #f6f6f6;
+}
+
+header {
+    width: $width;
+    margin: 0 auto;
+    height: 57px;
+    padding: 20px 0 10px 0;
+    .logo {
+        display: block;
+        width: 232px;
+        height: 57px;
+        float: left;
+        background: url(../../img/logo20172x.jpg)
+    }
+    span {
+        display: block;
+        float: right;
+        height: 16px;
+        margin-top: 35px;
+        a {
+            color: #428bca;
+        }
+    }
+}
+
+#main {
+    margin: 0 auto;
+    width: 860px;
+    height: 450px;
+    padding: 40px 60px;
+    background: #fff;
+    form {
+        width: 430px;
+        float: left;
+        dl {
+            width: 430px;
+            height: 36px;
+            padding: 15px 0;
+            dt {
+                width: 74px;
+                height: 36px;
+                float: left;
+                font-size: 14px;
+                color: #333;
+                line-height: 36px;
+                text-align: right;
+            }
+            dd {
+                float: left;
+                height: 36px;
+                width: 300px;
+                position: relative;
+                em {
+                    position: absolute;
+                    width: 26px;
+                    height: 26px;
+                    top: 5px;
+                    right: -20px;
+                    background: url(../../img/ico1.png) 0 0 no-repeat;
+                    display: none;
+                }
+                label {
+                    position: absolute;
+                    width: 300px;
+                    color: #e02f2f;
+                    top: 36px;
+                    left: 0;
+                }
+                input {
+                    width: 290px;
+                    height: 30px;
+                    padding: 2px 3px;
+                    border: 1px solid #d2d2d2;
+                    line-height: 30px;
+                    border-radius: 5px;
+                    color: #999;
+                    line-height: 30px;
+                    text-indent: 10px;
+                }
+                .slide_box {
+                    width: 300px;
+                    height: 32px;
+                    background: #d8d8d8;
+                    line-height: 32px;
+                    text-align: center;
+                    position: relative;
+                    .sliding_block {
+                        display: block;
+                        width: 40px;
+                        height: 30px;
+                        border: 1px solid #ccc;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        background: #fff;
+                        line-height: 32px;
+                        text-align: center;
+                        color: #737383;
+                    }
+                }
+                #verification {
+                    width: 120px;
+                    float: left;
+                }
+                .vcode_box {
+                    float: left;
+                    display: block;
+                    width: 155px;
+                    height: 34px;
+                    border: 1px solid #d2d2d2;
+                    line-height: 34px;
+                    border-radius: 5px;
+                    margin-left: 10px;
+                    text-align: center;
+                    color: #ccc;
+                    background: #f6f6f6;
+                }
+                .checkbox {
+                    width: 13px;
+                    height: 13px;
+                    margin-right: 5px;
+                }
+                .submit {
+                    border-radius: 3px;
+                    width: 178px;
+                    height: 35px;
+                    font-size: 14px;
+                    border-left: 1px solid #e93a3a;
+                    border-right: 1px solid #e93a3a;
+                    background: #ff3b37;
+                }
+                i {
+                    position: absolute;
+                    color: #fff;
+                    font-style: normal;
+                    display: block;
+                    width: 180px;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    top: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .form_right {
+        width: 430px;
+        height: 206px;
+        float: right;
+        // background: #c0c0c0;
+        .third_party_login {
+            width: 395px;
+            height: 100px;
+            padding-left: 35px;
+            padding-bottom: 20px;
+            border-top: 1px solid #ebebeb;
+            margin-top: 60px;
+            position: relative;
+            ul {
+                margin-top: 20px;
+                width: 250px;
+                height: 45px;
+                // background: #999;
+                float: left;
+                overflow: hidden;
+                li {
+                    float: left;
+                    a {
+                        display: block;
+                        width: 108px;
+                        height: 30px;
+                        margin-top: 10px;
+                        margin-left: 15px;
+                        line-height: 30px;
+                        text-align: center;
+                        border: 1px solid #d5d5d5;
+                        color: #666;
+                        font-size: 14px;
+                        border-radius: 2px;
+                        text-indent: 15px;
+                    }
+                }
+                li:nth-child(1) a {
+                    background: #f6f6f6 url(../../img/ico2.png) no-repeat 0 -2px;
+                }
+                li:nth-child(2) a {
+                    background: #f6f6f6 url(../../img/ico2.png) no-repeat 0 -36px;
+                }
+                li:nth-child(3) a {
+                    background: #f6f6f6 url(../../img/ico2.png) no-repeat 0 -107px;
+                }
+                li:nth-child(4) a {
+                    background: #f6f6f6 url(../../img/ico2.png) no-repeat 0 -142px;
+                }
+            }
+            .showmore {
+                width: 35px;
+                height: 17px;
+                padding: 0 10px;
+                margin-top: 40px;
+                margin-left: 15px;
+                float: left;
+                background: url(../../img/j.png) 35px -16px no-repeat;
+                cursor: pointer;
+            }
+            span {
+                position: absolute;
+                width: 132px;
+                height: 16px;
+                padding: 0 5px;
+                top: -8px;
+                background: #fff;
+                left: 144px;
+            }
+        }
+    }
+}
+
+footer {
+    padding: 30px 0;
+    ul {
+        width: $width;
+        margin: 0 auto;
+        height: 22px;
+        text-align: center;
+        li {
+            display: inline;
+        }
+    }
+}

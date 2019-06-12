@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/* 导航 */
+
+$height:40px;
+$wrapper:1200px;
+// 变量
+%inner {
+    width: $wrapper;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    .nav {
+        @extend %inner;
+    }
+}
+
+nav .nav ul {
+    height: $height;
+    li {
+        float: left;
+        a {
+            height: 38px;
+            display: block;
+            line-height: $height;
+            width: 130px;
+            text-align: center;
+            font-size: 16px;
+            color: #696969;
+        }
+    }
+    li:nth-child(1) a {
+        height: $height;
+        width: 150px;
+        background: #e60044;
+        color: #fff;
+        box-sizing: border-box;
+    }
+    span {
+        float: left;
+        a {
+            display: block;
+            width: 126px;
+            height: 34px;
+            background: url(../img/126x34.31dcb164756e442506db73bd7457c8f7.gif)
+        }
+    }
+}
+
+nav .nav ul li>a:hover {
+    border-bottom: 2px solid #ec1611;
+    box-shadow: 5px 0 10px #ddd, -5px 0 10px #ddd;
+}

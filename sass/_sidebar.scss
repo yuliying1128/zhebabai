@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/* sidebar侧边栏 */
+
+$width:34px;
+// 变量
+#sidebar {
+    z-index: 100;
+    width: $width;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    a:hover {
+        background: rgb(199, 0, 11);
+    }
+    .sidebar_top {
+        margin-top: 40px;
+        a {
+            display: block;
+            height: 42px;
+            position: relative;
+        }
+        a:nth-child(1) {
+            padding-top: 20px;
+            display: block;
+            height: 113px;
+            font-weight: bold;
+            color: #fff;
+            padding-left: 10px;
+            span {
+                width: 19px;
+                height: 17px;
+                display: block;
+                background: url(../img/sidebar_cart.png);
+                margin-bottom: 10px;
+                margin-left: -3px;
+            }
+            em {
+                display: block;
+                width: 20px;
+                height: 20px;
+                background: url(../img/side_golds.png) -1px -95px;
+                margin-left: -3px;
+                margin-top: 10px;
+                font-style: normal;
+                line-height: 20px;
+                text-align: center;
+                font-weight: normal;
+            }
+        }
+        a:hover em {
+            background: url(../img/side_golds.png) -1px -120px;
+            color: rgb(199, 0, 11);
+        }
+        a:nth-child(2) {
+            background: url(../img/side_golds.png) 6px -188px;
+            margin-left: 1px;
+        }
+        a:nth-child(3) {
+            background: url(../img/quan_iconnew.png) no-repeat center;
+        }
+        a:nth-child(4) {
+            background: url(../img/myFavorites.png) no-repeat center;
+        }
+        a:nth-child(5) {
+            background: url(../img/side_golds.png) 4px -227px;
+        }
+    }
+    .sidebar_bottom {
+        position: absolute;
+        height: 260px;
+        bottom: 0;
+        width: $width;
+        a {
+            display: block;
+            height: 42px;
+            position: relative;
+        }
+        a:nth-child(1) {
+            background: url(../img/sidePanel_checkin1N.gif) no-repeat center;
+            margin-left: 1px;
+        }
+        a:nth-child(2) {
+            background: url(../img/sidePanelIconsNew.png)no-repeat -386px 0;
+            margin-left: 1px;
+        }
+        a:nth-child(3) {
+            background: url(../img/sidePanelIconsNew.png) no-repeat -267px 0;
+        }
+        a:nth-child(4) {
+            background: url(../img/sidePanelIconsNew.png) no-repeat -330px 0;
+        }
+        a:nth-child(5) {
+            background: url(../img/sidePanelIconsNew.png) no-repeat -501px 0;
+        }
+        a:nth-child(6) {
+            background: url(../img/sidePanelIconsNew.png) no-repeat -554px 0;
+        }
+    }
+    p {
+        position: absolute;
+        left: 34px;
+        width: 159px;
+        height: 42px;
+        background: rgb(199, 0, 11);
+        color: #fff;
+        line-height: 42px;
+        text-align: center;
+        right: $width;
+        z-index: 101;
+    }
+}

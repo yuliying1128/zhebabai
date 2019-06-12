@@ -1,0 +1,190 @@
+    @charset "utf-8";
+    /* footer 底部*/
+    
+    $wrapper:1200px;
+    // 变量
+    footer {
+        border-top: 3px solid #ec1611;
+        background: #fff;
+        .footer_top {
+            ul {
+                width: $wrapper;
+                margin: 0 auto;
+                height: 298px;
+                li {
+                    float: left;
+                    width: 140px;
+                    height: 270px;
+                    padding-top: 28px;
+                    padding-left: 60px;
+                    span {
+                        display: block;
+                        width: 80px;
+                        height: 80px;
+                        margin-bottom: 14px;
+                    }
+                    h3 {
+                        font-size: 16px;
+                        color: #333;
+                        font-weight: normal;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                    a {
+                        display: block;
+                        height: 24px;
+                        line-height: 24px;
+                        color: #999;
+                    }
+                }
+                li:nth-child(1) {
+                    padding-left: 0;
+                    span {
+                        background: url(../img/foot_icon.png) 0 0;
+                    }
+                }
+                li:nth-child(2) {
+                    span {
+                        background: url(../img/foot_icon.png) -95px 0;
+                    }
+                }
+                li:nth-child(3) {
+                    span {
+                        background: url(../img/foot_icon.png) 0 -95px;
+                    }
+                }
+                li:nth-child(4) {
+                    span {
+                        background: url(../img/foot_icon.png) -190px 0;
+                    }
+                }
+                li:nth-child(5) {
+                    span {
+                        background: url(../img/foot_icon.png) -95px -95px;
+                    }
+                    em {
+                        font-style: normal;
+                        color: #999;
+                        height: 24px;
+                        line-height: 24px;
+                        display: inline-block;
+                    }
+                    a {
+                        width: 80px;
+                        display: inline-block;
+                        color: #ec1611;
+                    }
+                    .download {
+                        display: block;
+                        height: 24px;
+                        line-height: 24px;
+                        color: #999;
+                        width: 140px;
+                    }
+                    .email {
+                        width: 90px;
+                        height: 21px;
+                        padding: 1px 0 1px 5px;
+                        border: 1px solid #eaeaea;
+                        vertical-align: middle;
+                    }
+                    .subscription {
+                        width: 40px;
+                        height: 25px;
+                        padding: 1px 6px;
+                        border: 1px solid #eaeaea;
+                        vertical-align: middle;
+                        border-left: 0;
+                        margin-left: -3px;
+                        color: #999;
+                        background: #fafafa;
+                    }
+                }
+                li:nth-child(6) {
+                    .zhe800_logo {
+                        width: 104px;
+                        height: 216px;
+                        background: url(../img/footer_code.png);
+                        margin: 0 33px;
+                    }
+                    strong {
+                        display: block;
+                        width: 170px;
+                        height: 30px;
+                        font-size: 14px;
+                        color: #666;
+                        font-weight: normal;
+                        text-align: center;
+                        line-height: 30px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+        .links {
+            ul {
+                width: 750px;
+                padding-top: 20px;
+                height: 20px;
+                margin: 0 auto;
+                li {
+                    float: left;
+                    a {
+                        margin-right: 10px;
+                    }
+                }
+                li:nth-last-child(1) {
+                    float: right;
+                }
+            }
+        }
+        .footer_footer {
+            height: 100px;
+            padding-top: 10px;
+            width: $wrapper;
+            margin: 0 auto;
+            ul {
+                margin: 0 auto;
+                height: 16px;
+                width: 1000px;
+                margin-bottom: 20px;
+                li {
+                    float: left;
+                    color: #999;
+                    margin-right: 10px;
+                    a {
+                        color: #999;
+                    }
+                }
+            }
+            ul:nth-child(2) {
+                width: 550px;
+            }
+            p {
+                width: 560px;
+                color: #999;
+                margin: 0 auto;
+            }
+            .footer_icon {
+                padding-top: 20px;
+                width: 75px;
+                margin: 0 auto;
+                padding-bottom: 20px;
+                span {
+                    display: inline-block;
+                    width: 32px;
+                    height: 30px;
+                    margin-right: 10px;
+                }
+                span:nth-child(1) {
+                    background: url(../img/logo.jpg);
+                    background-size: cover;
+                }
+                span:nth-child(2) {
+                    margin-right: 0;
+                    background: url(../img/gsrz-icon.jpg);
+                    background-size: cover;
+                }
+            }
+        }
+    }

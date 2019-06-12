@@ -1,0 +1,112 @@
+@charset "utf-8";
+// 
+$wrapper:1200px;
+$height:30px;
+// 变量
+
+/* 头部 */
+
+%inner {
+    width: $wrapper;
+    margin: 0 auto;
+}
+
+#header {
+    background-color: #fafafa;
+    height: $height;
+}
+
+#header ul {
+    @extend %inner;
+}
+
+#header ul li {
+    float: right;
+    line-height: $height;
+}
+
+#header ul li a {
+    padding: 0 20px;
+    border-left: 1px solid #e5e5e5;
+}
+
+#header ul li a img {
+    vertical-align: middle;
+}
+
+#header ul li a i {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    background: url(../img/index-common.png);
+    vertical-align: middle;
+}
+
+#header ul li a strong {
+    color: #cf201c;
+    padding-left: 4px;
+}
+
+#header ul li:nth-last-child(1) a {
+    border: 0;
+}
+
+#header ul li:nth-child(5) a {
+    color: #ec1611;
+}
+
+#header ul li:hover a {
+    color: #e02f2f;
+}
+
+#header ul .usercookie {
+    position: relative;
+    em {
+        position: absolute;
+        height: 16px;
+        right: -1px;
+        font-style: normal;
+        background: #fafafa;
+        color: #999;
+        text-align: right;
+        line-height: 16px;
+        padding: 0 20px;
+        cursor: pointer;
+        opacity: 0;
+        display: none;
+    }
+}
+
+#header ul .usercookie:hover em {
+    display: block;
+}
+
+
+/* 手机下载二维码 */
+
+#header ul li:nth-child(7) {
+    position: relative;
+    height: $height;
+}
+
+#header .download_qr_code {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    padding: 8px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 0 5px #d4d4d4;
+    background: #fff;
+    display: none;
+    top: $height;
+    z-index: 10
+}
+
+#header ul li:nth-child(7):hover .download_qr_code {
+    display: block;
+}
+
+#header ul li .download_qr_code a {
+    border: 0;
+    padding: 0;
+}

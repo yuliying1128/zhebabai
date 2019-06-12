@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* seckill限时秒杀 */
+#seckill {
+  padding-top: 31px;
+  width: 1200px;
+  margin: 0 auto;
+  height: 300px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#seckill .seckill_top {
+  height: 40px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ff404c;
+  position: relative;
+  line-height: 40px;
+}
+
+#seckill .seckill_top img {
+  position: absolute;
+  margin-left: 13px;
+  font-size: 0;
+  left: 0;
+  top: 5px;
+}
+
+#seckill .seckill_top span {
+  font-size: 14px;
+  margin-left: 170px;
+}
+
+#seckill .seckill_top span i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #ff404c;
+  border-radius: 6px;
+  vertical-align: center;
+  margin-right: 5px;
+}
+
+#seckill .seckill_top span em {
+  font-style: normal;
+}
+
+#seckill .seckill_top ul {
+  float: right;
+  margin-top: 10px;
+}
+
+#seckill .seckill_top ul li {
+  float: left;
+  height: 28px;
+}
+
+#seckill .seckill_top ul li a {
+  font-size: 12px;
+  color: #333;
+  margin: 0 7px;
+}
+
+#seckill .seckill_top ul li:nth-child(2) a {
+  color: #ff404c;
+}
+
+#seckill .seckill_top ul li:nth-child(3) a {
+  color: #ff404c;
+}
+
+#seckill .seckill_top ul li:nth-child(6) a {
+  color: #ff404c;
+}
+
+#seckill .seckill_top ul li:nth-child(1) a {
+  width: 56px;
+  height: 28px;
+  display: block;
+  background: #ff404c;
+  padding: 0 10px;
+  margin-top: 5px;
+  line-height: 28px;
+  margin-right: 0;
+  color: #fff;
+}
+
+#seckill .seckill_product {
+  position: relative;
+}
+
+#seckill .seckill_product ul li {
+  float: left;
+  margin-left: 18px;
+}
+
+#seckill .seckill_product ul li a img {
+  width: 185px;
+  height: 185px;
+}
+
+#seckill .seckill_product ul li a span {
+  display: block;
+  width: 165px;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #ec1611;
+}
+
+#seckill .seckill_product ul li a span em {
+  font-style: normal;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+#seckill .seckill_product ul li a p {
+  width: 185px;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #666;
+  padding-top: 6px;
+}
+
+#seckill .seckill_product ul li:nth-child(1) {
+  margin: 0;
+}
+
+#seckill .seckill_product .prev-trigger {
+  background-position: -277px -440px;
+  left: 0;
+  width: 17px;
+  height: 43px;
+  background-image: url(http://z6.tuanimg.com/v3/src/img/common/big_bg_img_v3.png);
+  position: absolute;
+  top: 74px;
+  z-index: 3;
+  cursor: pointer;
+  color: #333;
+}
+
+#seckill .seckill_product .next-trigger {
+  background-position: -277px -440px;
+  left: 0;
+  width: 17px;
+  height: 43px;
+  background-image: url(http://z6.tuanimg.com/v3/src/img/common/big_bg_img_v3.png);
+  position: absolute;
+  top: 74px;
+  z-index: 3;
+  cursor: pointer;
+  color: #333;
+}

@@ -1,0 +1,97 @@
+@charset "utf-8";
+// 
+$wrapper:1200px;
+// 变量
+
+/* 索搜 */
+
+#search {
+    width: $wrapper;
+    margin: 0 auto;
+    padding: 22px 0;
+    height: 56px;
+    img {
+        float: left;
+    }
+    .search_bar {
+        margin-top: 7px;
+        border-radius: 5px;
+        width: 545px;
+        height: 35px;
+        border: 2px solid #e60044;
+        border-right: 0;
+        float: left;
+        margin-left: 30px;
+        position: relative;
+        .search_text {
+            display: inline-block;
+            width: 94px;
+            height: 35px;
+            padding-right: 17px;
+            background: url(../img/index-common.png) -34px -34px no-repeat;
+            color: #fff;
+            font-size: 19px;
+            text-align: center;
+            font-family: "microsoft yahei";
+            line-height: 35px;
+        }
+        .search_input {
+            width: 375px;
+            height: 24px;
+            position: absolute;
+            top: 5px;
+            border: 0;
+            padding-left: 10px;
+        }
+        .search_icon {
+            position: absolute;
+            right: 0;
+            width: 48px;
+            height: 24px;
+            top: 7px;
+            border: 0;
+            text-indent: -99999px;
+            background: url(../img/index-common.png) -34px 0 no-repeat;
+        }
+        .search_data {
+            position: absolute;
+            width: 496px;
+            border: 1px solid #e5e5e5;
+            background: #fff;
+            border-top: 0;
+            top: 40px;
+            display: none;
+            z-index: 10;
+            a {
+                display: block;
+                height: 24px;
+                line-height: 24px;
+                padding-left: 10px;
+                color: #333;
+                span {
+                    float: right;
+                    padding-right: 10px;
+                    color: #999;
+                    em {
+                        font-style: normal;
+                    }
+                }
+            }
+            a:hover {
+                background: #e5e5e5;
+            }
+        }
+    }
+    .search_right {
+        margin-top: 7px;
+        width: 15px;
+        height: 39px;
+        float: left;
+        background: url(../img/index-common.png) 0 -34px no-repeat;
+        margin-left: -4px;
+    }
+    .search_three_icon {
+        margin-top: 5px;
+        float: right;
+    }
+}
